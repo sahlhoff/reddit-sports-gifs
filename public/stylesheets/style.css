@@ -102,11 +102,11 @@ header#page-header a#branding {
 }
 
 .headline {
-  margin: 0 0 30px;
+  margin: 0 60px 40px 60px;
   padding: 21px 0 0;
   font-size: 46px;
   line-height: 52px;
-  min-height: 104px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .headline-media {
@@ -132,3 +132,143 @@ nav {
   float: right;
   padding: 20px;
 }
+
+.headline-social {
+  text-align: center;
+  position: relative;
+  padding: 10px 0 1em;
+}
+
+.sw_btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #cccccc;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #cccccc;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.facebook_button {
+  border-color: #37538d #37538d #213256;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-shadow: 0 0px 1px #283d68;
+  background-color: #3e5ea1;
+  background-image: -moz-linear-gradient(top, #4466ae, #37538d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4466ae), to(#37538d));
+  background-image: -webkit-linear-gradient(top, #4466ae, #37538d);
+  background-image: -o-linear-gradient(top, #4466ae, #37538d);
+  background-image: linear-gradient(to bottom, #4466ae, #37538d);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4466ae', endColorstr='#ff37538d', GradientType=0);
+  border-color: #283d68;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  border-color: #37538d;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255,.2);
+  -moz-box-shadow: inset 0px 1px 1px rgba(255,255,255,.2);
+  box-shadow: inset 0px 1px 1px rgba(255,255,255,.2);
+}
+
+.twitter_button {
+  border-color: #00a6d4 #00a6d4 #006a87;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-shadow: 0 0px 1px #007ea1;
+  background-color: #01bbee;
+  background-image: -moz-linear-gradient(top, #02c9ff, #00a6d4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#02c9ff), to(#00a6d4));
+  background-image: -webkit-linear-gradient(top, #02c9ff, #00a6d4);
+  background-image: -o-linear-gradient(top, #02c9ff, #00a6d4);
+  background-image: linear-gradient(to bottom, #02c9ff, #00a6d4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff02c9ff', endColorstr='#ff00a6d4', GradientType=0);
+  border-color: #007ea1;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  border-color: #00a6d4;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255,.2);
+  -moz-box-shadow: inset 0px 1px 1px rgba(255,255,255,.2);
+  box-shadow: inset 0px 1px 1px rgba(255,255,255,.2);
+}
+
+.textNode {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: top;
+  vertical-align: middle;
+  line-height: 1em;
+  height: 1em;
+  margin-top: -5px;
+}
+
+.share-row {
+  width: 34%;
+}
+
+a.facebook_button .icon:before {
+  font-family: 'FontAwesome' !important;
+  content: '\f09a';
+  color: #fff;
+  font-size: 1.2em;
+  padding: 0;
+  line-height: 1em;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  margin-right: 6px;
+  margin-left: -5px;
+  padding-top: 0;
+  margin-right: 8px;
+}
+
+a.twitter_button .icon:before {
+  font-family: 'FontAwesome' !important;
+  content: '\f099';
+  color: #fff;
+  font-size: 1.2em;
+  padding: 0;
+  line-height: 1em;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  margin-right: 6px;
+  margin-left: -5px;
+  padding-top: 0;
+}
+
+

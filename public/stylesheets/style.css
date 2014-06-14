@@ -88,7 +88,7 @@ header#page-header a#branding {
 .post-card {
   box-sizing: border-box;
   padding: 0 1%;
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
@@ -271,4 +271,26 @@ a.twitter_button .icon:before {
   padding-top: 0;
 }
 
+#arrow {
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+}
 
+.controls {
+  float: left;
+  margin-top: 115px;
+  margin-left: 30px;
+}
+
+.posts {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rank {
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 120px;
+  font-weight: 500;
+}

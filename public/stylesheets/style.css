@@ -296,3 +296,9 @@ a.twitter_button .icon:before {
   font-size: 120px;
   font-weight: 500;
 }
+
+.social {
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+  font-weight: 500;
+}

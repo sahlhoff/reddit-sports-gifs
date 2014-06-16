@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="sportsList">
   <head>
     <title>Sports Line</title>
     <link rel="stylesheet" href="/javascripts/lib/fontawesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <script src="/javascripts/lib/angular/angular.js"></script>
+    <script src="/javascripts/lib/angular-route/angular-route.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/controllers.js"></script>
   </head>
-  <body>
+  <body ng-controller="sportsListCtrl">
     <header id="page-header">
       <div class="logo-container">
         <div class="container">
@@ -13,144 +17,6 @@
         </div>
       </div>
     </header>
-    <ul>
-      <li class="posts">
-        <div class="controls">
-          <a class="upvote" href=""><i id="arrow" class="fa fa-arrow-up fa-5x"></i></a>
-          <h1 class="votes">0</h1>
-          <i class="social fa fa-twitter fa-3x"></i>
-          <br>
-          <i class="social fa fa-facebook fa-3x"></i>
-        </div>
-        <div class="post-card">
-          <div class="post-content">
-            <div class="headline">MNT vs. Nigeria</div>
-            <div class="headline-media">
-              <img src="sports_gifs/8.gif">
-            </div>  
-          </div>
-        </div>
-      </li>
-      <li class="posts">
-        <div class="controls">
-          <a class="upvote" href=""><i id="arrow" class="fa fa-arrow-up fa-5x"></i></a>
-          <h1 class="votes">0</h1>
-          <i class="social fa fa-twitter fa-3x"></i>
-          <br>
-          <i class="social fa fa-facebook fa-3x"></i>
-        </div>
-        <div class="post-card">
-          <div class="post-content">
-            <div class="headline">MNT vs. Nigeria</div>
-            <div class="headline-media">
-              <img src="sports_gifs/8.gif">
-            </div>  
-          </div>
-        </div>
-      </li>
-      <li class="posts">
-        <div class="controls">
-          <a class="upvote" href=""><i id="arrow" class="fa fa-arrow-up fa-5x"></i></a>
-          <h1 class="votes">0</h1>
-          <i class="social fa fa-twitter fa-3x"></i>
-          <br>
-          <i class="social fa fa-facebook fa-3x"></i>
-        </div>
-        <div class="post-card">
-          <div class="post-content">
-            <div class="headline">MNT vs. Nigeria</div>
-            <div class="headline-media">
-              <img src="sports_gifs/8.gif">
-            </div>  
-          </div>
-        </div>
-      </li>
-      <li class="posts">
-        <div class="controls">
-          <a class="upvote" href=""><i id="arrow" class="fa fa-arrow-up fa-5x"></i></a>
-          <h1 class="votes">0</h1>
-          <i class="social fa fa-twitter fa-3x"></i>
-          <br>
-          <i class="social fa fa-facebook fa-3x"></i>
-        </div>
-        <div class="post-card">
-          <div class="post-content">
-            <div class="headline">MNT vs. Nigeria</div>
-            <div class="headline-media">
-              <img src="sports_gifs/8.gif">
-            </div>  
-          </div>
-        </div>
-      </li>
-      <li class="posts">
-        <div class="controls">
-          <a class="upvote" href=""><i id="arrow" class="fa fa-arrow-up fa-5x"></i></a>
-          <h1 class="votes">0</h1>
-          <i class="social fa fa-twitter fa-3x"></i>
-          <br>
-          <i class="social fa fa-facebook fa-3x"></i>
-        </div>
-        <div class="post-card">
-          <div class="post-content">
-            <div class="headline">MNT vs. Nigeria</div>
-            <div class="headline-media">
-              <img src="sports_gifs/8.gif">
-            </div>  
-          </div>
-        </div>
-      </li>
-      <li class="posts">
-        <div class="controls">
-          <a class="upvote" href=""><i id="arrow" class="fa fa-arrow-up fa-5x"></i></a>
-          <h1 class="votes">0</h1>
-          <i class="social fa fa-twitter fa-3x"></i>
-          <br>
-          <i class="social fa fa-facebook fa-3x"></i>
-        </div>
-        <div class="post-card">
-          <div class="post-content">
-            <div class="headline">MNT vs. Nigeria</div>
-            <div class="headline-media">
-              <img src="sports_gifs/8.gif">
-            </div>  
-          </div>
-        </div>
-      </li>
-      <li class="posts">
-        <div class="controls">
-          <a class="upvote" href=""><i id="arrow" class="fa fa-arrow-up fa-5x"></i></a>
-          <h1 class="votes">0</h1>
-          <i class="social fa fa-twitter fa-3x"></i>
-          <br>
-          <i class="social fa fa-facebook fa-3x"></i>
-        </div>
-        <div class="post-card">
-          <div class="post-content">
-            <div class="headline">MNT vs. Nigeria</div>
-            <div class="headline-media">
-              <img src="sports_gifs/8.gif">
-            </div>  
-          </div>
-        </div>
-      </li>
-      <li class="posts">
-        <div class="controls">
-          <a class="upvote" href=""><i id="arrow" class="fa fa-arrow-up fa-5x"></i></a>
-          <h1 class="votes">0</h1>
-          <i class="social fa fa-twitter fa-3x"></i>
-          <br>
-          <i class="social fa fa-facebook fa-3x"></i>
-        </div>
-        <div class="post-card">
-          <div class="post-content">
-            <div class="headline">MNT vs. Nigeria</div>
-            <div class="headline-media">
-              <img src="sports_gifs/8.gif">
-            </div>  
-          </div>
-        </div>
-      </li>                                    
-    </ul>
+    <div ng-view></div>
   </body>
-  <script data-main="javascripts/config.js" src="javascripts/lib/requirejs/require.js"></script>
 </html>

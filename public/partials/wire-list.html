@@ -1,0 +1,19 @@
+<ul>
+  <li ng-repeat="wire in wires" class="posts">
+    <div class="controls">
+      <div class="upvote"><i id="arrow" class="fa fa-arrow-up fa-5x"></i></div>
+      <h1 class="votes">{{wire.votes}}</h1>
+      <i class="social fa fa-twitter fa-3x"></i>
+      <br>
+      <i class="social fa fa-facebook fa-3x"></i>
+    </div>
+    <div class="post-card">
+      <div class="post-content">
+        <div class="headline"><a href="#/wires/{{wire.name}}">MNT vs. Nigeria</a></div>
+        <div class="headline-media">
+          <img src="sports_gifs/8.gif">
+        </div>  
+      </div>
+    </div>
+  </li>
+</ul>

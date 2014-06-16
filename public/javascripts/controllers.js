@@ -1,23 +1,18 @@
 var sportsListControllers = angular.module('sportsListControllers', []);
 
-sportsListControllers.controller('sportsListCtrl', function ($scope) {
-  $scope.wires = [
-    {'name': 'Nexus S',
-     'snippet': 'Fast just got faster with Nexus S.',
-     'votes': 0},
-    {'name': 'Motorola XOOM™ with Wi-Fi',
-     'snippet': 'The Next, Next Generation tablet.',
-     'votes': 0},
-    {'name': 'MOTOROLA XOOM™',
-     'snippet': 'The Next, Next Generation tablet.',
-     'votes': 0}
-  ];
-});
+sportsListControllers.controller('sportsListCtrl', ['$scope', '$http',
+  function ($scope, $http) {
+    $http.get('wires').success(function(data) {
+      $scope.wires = data;
+  });
 
-sportsListControllers.controller('sportsDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.name = $routeParams.wireName;
+  $scope.orderProp = 'votes';
+}]);
 
-
-
+sportsListControllers.controller('sportsDetailCtrl', ['$scope', '$routeParams', '$http',
+   function($scope, $routeParams, $http) {
+    $http.get('wires/' + $routeParams.wireId).success(function(data) {
+      console.log('data', data);
+      $scope.wire = data;
+    });
   }]);

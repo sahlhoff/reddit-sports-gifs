@@ -10,7 +10,7 @@ sportsList.config(['$routeProvider',
         templateUrl: 'partials/wire-list.html',
         controller: 'sportsListCtrl'
       }).
-      when('/wires/:wireName', {
+      when('/wires/:wireId', {
         templateUrl: 'partials/wire-detail.html',
         controller: 'sportsDetailCtrl'
       }).

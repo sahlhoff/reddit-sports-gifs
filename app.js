@@ -7,7 +7,7 @@ var config = require('./config.json')
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://sahlhoff:Bremen123@ds031988.mongolab.com:31988/sportsline');
+mongoose.connect(config.mongodbConnection);
 
 var routes = require('./routes/index');
 

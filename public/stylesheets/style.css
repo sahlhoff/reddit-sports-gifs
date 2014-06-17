@@ -288,6 +288,7 @@ a.twitter_button .icon:before {
 .posts {
   width: 70%;
   margin: 0 auto;
+  margin-top: 75px;
   text-align: center;
 }
 
@@ -314,3 +315,12 @@ nav {
 #sub-nav {
   margin-left: 150px;
 }
+
+#comments {
+  margin-top: 100px;
+}
+
+#comments-title {
+  font-weight: 400;
+  color: #365f9f;
+  font-size: 30px;

@@ -273,7 +273,8 @@ a.twitter_button .icon:before {
   padding-top: 0;
 }
 
-#arrow {
+.arrow {
+  cursor: pointer;
   color: #fff;
   text-shadow: 1px 1px 1px #ccc;
 }

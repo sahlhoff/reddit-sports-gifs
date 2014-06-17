@@ -11,8 +11,15 @@ sportsListControllers.controller('sportsListCtrl', ['$scope', '$http',
 
 sportsListControllers.controller('sportsDetailCtrl', ['$scope', '$routeParams', '$http',
    function($scope, $routeParams, $http) {
-    $http.get('wires/' + $routeParams.wireId).success(function(data) {
-      console.log('data', data);
+    $http.get('wires/' + $routeParams.wireId).success(function (data) {
       $scope.wire = data;
     });
+
+    $scope.upvote = function(wire){
+      wire.votes += 1;
+      $http.get('upvote/' + wire.id).success(function (data) {
+        console.log(data);
+      });
+    }
+
   }]);

@@ -1,6 +1,6 @@
 <div class="posts">
   <div class="controls">
-    <a class="upvote" href=""><i id="arrow" class="fa fa-arrow-up fa-5x" ng-click="upvote(wire)"></i></a>
+    <a class="upvote" href=""><i class="fa fa-arrow-up fa-5x arrow" ng-click="upvote(wire)"></i></a>
     <h1 class="votes">{{wire.votes}}</h1>
     <i class="social fa fa-twitter fa-3x"></i>
     <br>
@@ -10,7 +10,7 @@
     <div class="post-content">
       <div class="headline">{{wire.name}}</div>
       <div class="headline-media">
-        <img src="sports_gifs/8.gif">
+        <img src="sports_gifs/{{wire.id}}.gif">
       </div>  
     </div>
   </div>

@@ -58,7 +58,7 @@ body {
 header#page-header .logo-container {
   padding: .75em;
   border-bottom: 1px solid #E6E4E0;
-  background: #FFF;
+  background: #365f9f;
 }
 
 .container {
@@ -83,7 +83,7 @@ header#page-header a#branding {
   text-decoration: none;
   border: 0;
   margin: 0 auto;
-  color: #000;
+  color: #fff;
 }
 
 .post-card {
@@ -302,4 +302,15 @@ a.twitter_button .icon:before {
   color: #fff;
   text-shadow: 1px 1px 1px #ccc;
   font-weight: 500;
+}
+
+nav {
+  padding: 10px;
+  background: #fff;
+  width: 100%;
+  border-bottom: 2px solid #E6E4E0;
+}
+
+#sub-nav {
+  margin-left: 150px;
 }

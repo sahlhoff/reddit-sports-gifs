@@ -23,5 +23,4 @@ router.get('/wires/:id', function (req, res){
   })
 })
 
-
 module.exports = router;

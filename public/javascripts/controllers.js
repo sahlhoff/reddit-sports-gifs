@@ -7,6 +7,14 @@ sportsListControllers.controller('sportsListCtrl', ['$scope', '$http',
   });
 
   $scope.orderProp = 'votes';
+
+  $scope.upvote = function(wire){
+    wire.votes += 1;
+
+    $http.get('upvote/' + wire.id).success(function (data){
+      console.log(data);
+    })
+  }
 }]);
 
 sportsListControllers.controller('sportsDetailCtrl', ['$scope', '$routeParams', '$http',

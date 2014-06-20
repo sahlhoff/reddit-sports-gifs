@@ -306,14 +306,17 @@ a.twitter_button .icon:before {
 }
 
 nav {
+  height: 30px;
   padding: 10px;
   background: #fff;
   width: 100%;
   border-bottom: 2px solid #E6E4E0;
+  font-size: 25px;
 }
 
 #sub-nav {
   margin-left: 150px;
+  float: left;
 }
 
 #comments {
@@ -324,3 +327,14 @@ nav {
   font-weight: 400;
   color: #365f9f;
   font-size: 30px;
+}
+
+#subscribe {
+  float: right;
+  margin-right: 150px;
+}
+
+#subscribe input {
+  font-size: 15px;
+  line-height: 20px;
+}

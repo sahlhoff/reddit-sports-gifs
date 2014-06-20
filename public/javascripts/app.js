@@ -1,6 +1,7 @@
 var sportsList = angular.module('sportsList', [
   'ngRoute',
-  'sportsListControllers'
+  'sportsListControllers',
+  'ipCookie'
 ]);
 
 sportsList.config(['$routeProvider',

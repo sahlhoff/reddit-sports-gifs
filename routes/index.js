@@ -1,5 +1,6 @@
 var express = require('express');
 var gif = require('../models/gif.js');
+var Subscription = require('../models/subscription.js');
 
 var router = express.Router();
 
@@ -29,6 +30,22 @@ router.get('/upvote/:id', function (req, res){
     if(err){ console.log(err) }
     res.send(200);
   })
+})
+
+/* GET subscribe/email */
+router.post('/subscribe/:email', function (req, res){
+  console.log('POST subscribe');
+  var d = Date.now();
+  var subscriber = {
+    email: req.params.email,
+    date: d
+  }
+
+  console.log(subscriber);
+
+  var subscription = new Subscription(subscriber);
+  subscription.save();
+  res.send(200);
 })
 
 module.exports = router;

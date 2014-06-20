@@ -2,6 +2,13 @@
   <div id="sub-nav">
     <span id="newest">Newest</span> | <span id="top">Top</span>
   </div>
+  <div id="subscribe">
+    <form ng-submit="subscribe()">
+      <label>Subscribe for Weekly Top Tens</label>
+      <input type="email" ng-model="email" name="email">
+      <button class="btn" ngClick="Submit">Subscribe</button>
+    </form>
+  </div>
 </nav>
 <ul>
   <li ng-repeat="wire in wires | orderBy: '-votes'" class="posts">

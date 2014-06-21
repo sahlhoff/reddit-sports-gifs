@@ -9,10 +9,10 @@ sportsListControllers.controller('sportsListCtrl', ['$scope', '$http', 'ipCookie
   $scope.orderProp = 'votes';
 
   $scope.upvote = function(wire){
-    if(!ipCookie(wire.id.toString())){
+    if(!ipCookie(wire._id.toString())){
       wire.votes += 1;
-      $http.get('upvote/' + wire.id).success(function (data){
-        ipCookie(wire.id, true);
+      $http.get('upvote/' + wire._id).success(function (data){
+        ipCookie(wire._id, true);
       });
     } else {
       console.log('boo!');
@@ -29,22 +29,22 @@ sportsListControllers.controller('sportsListCtrl', ['$scope', '$http', 'ipCookie
 
 }]);
 
-sportsListControllers.controller('sportsDetailCtrl', ['$scope', '$routeParams', '$http',
-   function($scope, $routeParams, $http) {
+sportsListControllers.controller('sportsDetailCtrl', ['$scope', '$routeParams', '$http', 'ipCookie',
+   function($scope, $routeParams, $http, ipCookie) {
     $http.get('wires/' + $routeParams.wireId).success(function (data) {
       $scope.wire = data;
     });
 
     $scope.upvote = function(wire){
-      if(!ipCookie(wire.id.toString())){
+      if(!ipCookie(wire._id.toString())){
         wire.votes += 1;
-        $http.get('upvote/' + wire.id).success(function (data) {
-          ipCookie(wire.id, true);
+        $http.get('upvote/' + wire._id).success(function (data) {
+          ipCookie(wire._id, true);
         });
       } else {
         console.log('boo');
       }
       
     }
-
+    
   }]);

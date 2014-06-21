@@ -19,14 +19,14 @@ router.get('/wires', function (req, res){
 
 /* GET wires/wire */
 router.get('/wires/:id', function (req, res){
-  gif.findOne({id: req.params.id}, function (err, wire){
+  gif.findOne({_id: req.params.id}, function (err, wire){
     res.send(wire);
   });
 });
 
 /* GET upvote/wire */
 router.get('/upvote/:id', function (req, res){
-  gif.findOneAndUpdate({id: req.params.id}, {$inc:{votes:1}}, function(err, wire){
+  gif.findOneAndUpdate({_id: req.params.id}, {$inc:{votes:1}}, function(err, wire){
     if(err){ console.log(err) }
     res.send(200);
   })

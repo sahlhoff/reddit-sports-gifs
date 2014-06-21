@@ -10,11 +10,11 @@
     <div class="post-content">
       <div class="headline">{{wire.name}}</div>
       <div class="headline-media">
-        <img src="../sports_gifs/{{wire.id}}.gif">
+        <img src="//{{wire.imgUrl}}">
       </div>  
     </div>
   </div>
   <div id="comments">
     <div id="comments-title">Facebook Conversations</div>
-    <div class="fb-comments" data-href="http://localhost:3000/#/wires/{{ wire.id }}" data-numposts="5" data-colorscheme="light"></div>
+    <div class="fb-comments" data-href="http://localhost:3000/#/wires/{{ wire._id }}" data-numposts="5" data-colorscheme="light"></div>
   </div>

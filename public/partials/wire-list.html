@@ -11,9 +11,9 @@
   </div>
 </nav>
 <div id="location-controls">
-  <i ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1" class="lf fa fa-hand-o-left fa-5x arrow"></i>
+  <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1" class="arrow-button lf fa fa-arrow-circle-left fa-5x arrow"></button>
   <div class="lf" id="location-counter">{{currentPage+1}}/{{wires.length/pageSize}}</div>
-  <i ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1" class="lf fa fa-hand-o-right fa-5x arrow"></i>
+  <button ng-disabled="currentPage >= wires.length/pageSize - 1" ng-click="currentPage=currentPage+1" class="arrow-button lf fa fa-arrow-circle-right fa-5x arrow"></button>
 </div>
 <ul>
   <li ng-repeat="wire in wires | orderBy: '-votes' | startFrom:currentPage*pageSize | limitTo:pageSize" class="posts">

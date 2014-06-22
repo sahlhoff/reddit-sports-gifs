@@ -359,3 +359,12 @@ nav {
   font-size: 80px;
   font-weight: 500;
 }
+
+.arrow-button {
+  border: 0px;
+  background: none;
+}
+
+.arrow-button:focus{
+  outline: none;
+}

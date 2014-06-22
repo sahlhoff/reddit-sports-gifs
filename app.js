@@ -65,46 +65,6 @@ app.use(function(err, req, res, next) {
 new CronJob('* * * * * *', function(){
   scrape();
 }, null, true, "America/Los_Angeles");
-
-
-var scrape = function (){
-  request('http://www.reddit.com/r/HighlightGIFS.json?sort=new', function (error, response, body){
-    if (!error && response.statusCode == 200) {
-      body = JSON.parse(body);
-      var posts = body.data.children;
-      for(post in posts){
-        var title = posts[post].data.title;
-        var domain = posts[post].data.domain;
-        var url = posts[post].data.url;
-        console.log(title);
-
-        if(domain === 'gfycat.com'){
-          url += '.gif';
-          url = url.replace('http://', 'giant.', 'gi');
-        } 
-
-        Gif.findOne({name: title}, function(err, post){
-          if(!err && !post){
-            console.log('no gif!', title);
-            var d = new Date();
-            var myGif = {
-              name: title,
-              imgUrl: url,
-              created: d,
-              votes: 0,
-            }
-
-            var gif = Gif(myGif);
-            gif.save();
-          } else {
-            console.log('gif found!  ', post);
-          }
-        });
-      }
-    }
-  });
-}
-
 */
 
 

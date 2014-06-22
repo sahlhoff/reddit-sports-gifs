@@ -10,8 +10,17 @@
     </form>
   </div>
 </nav>
+<div id="location-controls">
+  <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+    Previous
+  </button>
+  {{currentPage+1}}/{{wires.length/pageSize}}
+  <button ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+    Next
+  </button>
+</div>
 <ul>
-  <li ng-repeat="wire in wires | orderBy: '-votes'" class="posts">
+  <li ng-repeat="wire in wires | orderBy: '-votes' | startFrom:currentPage*pageSize | limitTo:pageSize" class="posts">
     <div class="controls">
       <div class="upvote"><i class="fa fa-arrow-up fa-5x arrow" ng-click="upvote(wire)"></i></div>
       <h1 class="votes">{{wire.votes}}</h1>

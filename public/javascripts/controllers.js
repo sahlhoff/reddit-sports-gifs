@@ -4,6 +4,8 @@ sportsListControllers.controller('sportsListCtrl', ['$scope', '$http', 'ipCookie
   function ($scope, $http, ipCookie, $location) {
     $http.get('wires').success(function(data) {
       $scope.wires = data;
+      $scope.currentPage = 0;
+      $scope.pageSize = 5;
   });
 
   $scope.orderProp = 'votes';
@@ -46,5 +48,5 @@ sportsListControllers.controller('sportsDetailCtrl', ['$scope', '$routeParams', 
       }
       
     }
-    
+
   }]);

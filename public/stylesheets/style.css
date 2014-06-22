@@ -339,3 +339,23 @@ nav {
   font-size: 15px;
   line-height: 20px;
 }
+
+.lf {
+  float: left;
+}
+
+#location-controls {
+  text-align: center;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 550px;
+}
+
+#location-counter {
+  padding: 0 70px 0 70px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 80px;
+  font-weight: 500;
+}
